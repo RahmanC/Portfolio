@@ -1,0 +1,49 @@
+
+body {
+  font-family: roboto;
+  background-color: #00607a;
+  margin: 0px;
+}
+
+.img {
+  height: 150px;
+  width: 150px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+  	
+}
+
+nav {
+  color: white;
+  font-size: 15px;
+  background-color: #00607a;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  opacity: 0.8;
+  padding-bottom: 100px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 3px solid rgb(2, 9, 31);
+}
+
+div {
+  background-position: center center;
+  color: white;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
