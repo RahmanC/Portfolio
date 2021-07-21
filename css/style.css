@@ -6,6 +6,9 @@ html {
 body.main {
   color: white;
   background-color: #003644;
+  background-image: url("/images/bck2.jpg"); 
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 body.main a {
   color: rgb(195, 216, 216);
