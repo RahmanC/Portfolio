@@ -11,91 +11,131 @@
 
     <script src="https://kit.fontawesome.com/77d4292098.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+
     <title>Abdulrahman Afaraetu</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="images/img-01.jpeg" sizes="32x32">
 </head>
 
-<body class="main" >
-    <main class="wrapper">
+<body class="main">
+
+    <div class="navigation-wrapper">
         <nav class="navigation">
             <section class="container">
                 <a class="navigation-title" href="/">
                     ABDULRAHMAN AFARAETU
                 </a>
 
+
                 <ul class="navigation-list">
                     <li class="navigation-item">
                         <a class="navigation-link" href="/">Home</a>
                     </li>
-                
+
                     <li class="navigation-item">
-                        <a class="navigation-link" href="/about.html">👦🏾About me</a>
+                        <a class="navigation-link" href="#about">About me</a>
                     </li>
-                
+
                     <li class="navigation-item">
-                        <a class="navigation-link" href="/work.html">👨🏾‍💻Work</a>
+                        <a class="navigation-link" href="#projects">Projects</a>
                     </li>
-                
+
                     <li class="navigation-item">
-                        <a class="navigation-link" href="mailto:afaraeturahman@gmail.com">📲Contact me</a>
+                        <a class="navigation-link" href="#form">Contact me</a>
                     </li>
-                
-                    <!-- <li class="navigation-item">
-                                        <a class="navigation-link" href="#resume">📝Resume</a>
-                                    </li> -->
-                
+
                 </ul>
 
             </section>
         </nav>
+    </div>
 
 
-        <div class="content">
+    <div class="content">
 
-            <section class="container centered">
-                <div class="about">
+        <section class="container centered">
+            <div id="about" class="about">
 
 
-                    <div class="avatar" ><img src="/images/img-01.jpeg" alt="Abdulrahman Afaraetu" ></div>
+                <div class="avatar"><img src="/images/img-01.jpeg" alt="Abdulrahman Afaraetu"></div>
 
-                    <h1>Abdulrahman Afaraetu</h1>
-                    <h2>Frontend Developer</h2>
+                <h1>Abdulrahman Afaraetu</h1>
+                <h2>Frontend Developer</h2>
+                <p>An enthusiastic personality with some relevant Information Technology experience in collaborating
+                    with
+                    creative and development teams on the execution of ideas and projects.</p>
 
-               
-                </div>
-            </section>
+            </div>
+
+        </section>
+    </div>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <p>
+            HTML, CSS, Javascript, Git, PostgreSQL, Bootstrap, PHP|Laravel
+        </p>
+    </section>
+
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container">
+
+            <a href="https://bookingpagesite.netlify.app/" class="project-title" target="_blank">
+                <img src="images/booking.PNG" alt="laundry-booking">
+                <p>Laundry booking</p>
+            </a>
+
         </div>
+    </section>
 
-            <footer>
-                <section class="container centered">
-                    <div class="about">
-                        <ul>
-            
-                            <li>
-                                <a href="https://github.com/RahmanC" aria-label="Github" target="_blank">
-                                    <i class="fa fa-github" aria-hidden="true"></i>
-                                </a>
-                            </li>
-            
-                            <li>
-                                <a href="https://twitter.com/_rhammy/" aria-label="Twitter" target="_blank">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                </a>
-                            </li>
-            
-                            <li>
-                                <a href="https://www.linkedin.com/in/afaraetu94/" aria-label="LinkedIn" target="_blank">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-            </footer>
+    <section id="form">
+        <form action="">
+            <h3>Contact Me:</h3>
 
-    </main>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+
+            <input type="email" id="email" name="email" placeholder="Your email">
+
+
+            <textarea id="subject" name="subject" placeholder="Write me a message..." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+    <footer>
+        <section class="footer">
+
+            <ul>
+
+                <li>
+                    <a href="https://github.com/RahmanC" aria-label="Github" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://twitter.com/_rhammy/" aria-label="Twitter" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/afaraetu94/" aria-label="LinkedIn" target="_blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+    </footer>
 
 </body>
 
