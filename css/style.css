@@ -262,3 +262,9 @@ input[type="submit"]:hover {
 .footer ul li a i {
   font-size: 3.2rem;
 }
+
+.copyright{
+   background-color: #000331;
+   margin: 0;
+   text-align: center;
+}
