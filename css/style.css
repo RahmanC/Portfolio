@@ -132,6 +132,7 @@ header.sticky ul li a {
 }
 .services .heading h2,
 .services .heading p {
+  margin-bottom: 10px;
   color: #fff;
 }
 .services .content {
@@ -160,7 +161,7 @@ header.sticky ul li a {
   font-size: 20px;
   font-weight: 600;
 }
-/* end review */
+
 
 
 .work .content {
@@ -171,6 +172,21 @@ header.sticky ul li a {
 .work .content .workBx {
   width: 50%;
   padding: 20px;
+  transition: all 2s ease-in-out;
+}
+.work .content .workBx:hover{
+  /* background:#999; */
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  opacity: 1.5;
+  transform: rotate(180);
+  transform: skew(25);
+  transform: scale(2);
+  /* transform: translateY(-100px);
+  transform: translate(100px); */
+  /* transform: translate(-100px, 100px);
+  transform: translate3d(100px 100px 100px); */
 }
 .work .content .workBx img {
   max-width: 100%;
@@ -285,7 +301,7 @@ header.sticky ul li a {
 .copyright ul li a:hover,
 .copyright ul li a:focus,
 .services .content ul li:hover,
-.services .content ul li:hover {
+.services .content ul li:focus {
   color: #1565c0;
 }
 
@@ -294,7 +310,21 @@ header.sticky ul li a {
   font-size: 3.2rem;
 }
 
-/* responsiveness */
+.services .content ul li i{
+  margin-bottom: 20px;
+  transition: all 2s ease-in-out;
+}
+.services .content ul li i:hover {
+  border-radius: none;
+  opacity: 1.5;
+  transform: rotate(180);
+  transform: skew(25);
+  transform: scale(2);
+  
+}
+
+
+/* tab */
 @media (max-width:991px) {
   header,
   header.sticky {
@@ -383,6 +413,7 @@ header.sticky ul li a {
 }
 }
 
+/* mob */
 @media (max-width: 600px) {
   header,
   header.sticky {
@@ -394,4 +425,10 @@ header.sticky ul li a {
   section {
     padding: 100px 20px;
   }
+  .copyright ul, .services .content ul li {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    display: inline;
+}
 }
