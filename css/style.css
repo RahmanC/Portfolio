@@ -30,6 +30,7 @@ section {
 .banner h2 span {
   font-size: 1.5em;
   font-weight: 700;
+  color: #2196f3;
 }
 .banner h3 {
   font-size: 1.5em;
@@ -42,12 +43,13 @@ section {
   display: inline-block;
   color: #fff;
   margin-top: 20px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   font-size: 18px;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
+  border-radius: 5px;
 }
 header {
   position: fixed;
