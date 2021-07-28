@@ -13,7 +13,7 @@ section {
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url(../img/banner2.jpg);
+  background: url(../img/banner_mobile.jpg);
   /* background-color: #000; */
   background-size: cover;
   background-position: right;
@@ -105,9 +105,16 @@ header ul li a:hover {
   color: #fff;
   border: #2196f3 solid;
   border-radius: 5px;
+  padding: 2px;
 }
 header.sticky ul li a {
   color: #111;
+}
+header.sticky ul li a:hover {
+  background: #2196f3;
+  color: #fff;
+  border: #2196f3 solid;
+  border-radius: 5px;
 }
 .heading {
   width: 100%;
@@ -352,6 +359,9 @@ header.sticky ul li a {
         padding: 20px 50px;
         z-index: 1000;
   }
+  header.sticky {
+    background:#111;
+  }
   .menu {
     position: fixed;
     top: 75px;
@@ -365,6 +375,7 @@ header.sticky ul li a {
     transition: 0.5s;
     z-index: 1000;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0.8;
   }
   .menu.active {
     left: 0;
@@ -377,6 +388,7 @@ header.sticky ul li a {
   .toggle {
     width: 40px;
     height: 40px;
+    color: #000;
     background: url(/img/menu.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -394,11 +406,15 @@ header.sticky ul li a {
   header .sticky .toggle{
     filter: invert(1);
   }
+  header.sticky .logo {
+  color: #fff;
+}
   section {
     padding: 100px 50px;
   }
   .banner{
     padding: 150px 50px 100px;
+    background-position: center;
   }
   .banner h2 {
     font-size: 1.5em;
@@ -438,21 +454,21 @@ header.sticky ul li a {
   margin: 20px 0;
 }
 
-.work .content .workBx:hover{
-  /* background:#999; */
+/* .work .content .workBx:hover{
+  background:#999;
   border-radius: 50%;
   height: 50%;
   width: 50%;
   opacity: 1.5;
-  /* transform: rotate(180); */
+  transform: rotate(180);
   transform: skew(25);
   cursor: pointer;
-  /* transform: scale(2); */
-  /* transform: translateY(50px); */
-  /* transform: translate(-100px); */
-  /* transform: translate(-100px, 100px); */
-  /* transform: translate3d(100px 100px 100px); */
-}
+  transform: scale(2);
+  transform: translateY(50px);
+  transform: translate(-100px);
+  transform: translate(-100px, 100px);
+  transform: translate3d(100px 100px 100px);
+} */
 }
 
 /* mob */
@@ -496,8 +512,9 @@ header.sticky ul li a {
     color: #fff;
 }
 .mansory div img {
-  object-fit: cover;
+ 
   object-position: center;
+   object-fit: cover;
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -522,7 +539,7 @@ header.sticky ul li a {
 }
 .f {
     grid-row: 2;
-    grid-column: 1 / 2;
+    /* grid-column: 1 / 2; */
 }
 .e {
     grid-row: 2;
@@ -573,4 +590,28 @@ header.sticky ul li a {
 }
 
 
+}
+
+/* goto top */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #1565c0;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  color: #1565c0;
+  border: #1565c0 solid;
+  background-color: #fff;
+  border-radius: 4px;
 }
