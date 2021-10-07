@@ -21,7 +21,7 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#work">Works</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="/resume/ABDULRAHMAN AFARAETU CV.pdf" download>Resume</a></li>
+                <li><a href="/resume.html">Resume</a></li>
             </ul>
         </div>
     </header>
@@ -102,31 +102,6 @@
         </div>
     </section>
 
-    <section id="gallery">
-        <div class="heading">
-            <h2>Memories</h2>
-        </div>
-        <main class="mansory">
-            <div class="a">
-                <img src="img/1.jpg">
-            </div>
-            <div class="b">
-                <img src="img/2.jpg">
-            </div>
-            <div class="d">
-                <img src="img/7.jpg">
-            </div>
-            <div class="f">
-                <img src="img/3.jpg">
-            </div>
-            <div class="e">
-                <img src="img/4.jpg">
-            </div>
-            <div class="h">
-                <img src="img/9.jpg">
-            </div>
-        </main>
-    </section>
 
     <section class="work" id="work">
         <div class="heading">
@@ -195,8 +170,8 @@
         </div>
 
     </section>
-    <button id="myBtn" title="Go to top">
-        <a href="#home"><i class="fas fa-arrow-up"></i></a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+       <i class="fas fa-angle-double-up"></i>
     </button>
 
     <div class="footer">
@@ -236,6 +211,33 @@
             menu.classList.toggle('active');
         }
         // end of hambuger
+
+        //Get the button
+            var mybutton = document.getElementById("myBtn");
+
+           
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+
+            
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+
+
+
+            window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+         });
     </script>
 
 </body>
