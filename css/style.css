@@ -130,12 +130,14 @@ header ul li a:hover {
   
 }
 .custom {
-  min-width: 50%;
+  /* max-width: 46%; */
+  /* max-height: 50%; */
+  border-radius: 50%;
 }
 .img {
   max-width: 100%;
-  border-radius: 20px;
-  min-height: 30%;
+  border-radius: 50px;
+  min-height: 100%;
 }
 
 /* review later */
